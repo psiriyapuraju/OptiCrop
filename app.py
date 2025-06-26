@@ -1,12 +1,11 @@
 import numpy as np
 from flask import Flask, request, render_template
 import pickle
-import os
 
 app = Flask(__name__)
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-model = pickle.load(open(os.path.join(os.path.dirname(__file__), 'model.pkl'), 'rb'))
+path = r'C:\Users\psiri\Desktop\OptiCrop\\'
+model = pickle.load(open(path + "model.pkl", 'rb'))
 
 @app.route('/')
 
@@ -30,4 +29,4 @@ def predict():
     return render_template('findyourcrop.html',prediction_text='Best crop for given conditions is {}'.format(output))
 
 if __name__ == "__main__":
-    app.run(debug = True, use_reloader = False)
+    app.run(debug = True)
