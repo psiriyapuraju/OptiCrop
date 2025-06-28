@@ -7,62 +7,62 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #f8fbfd; /* Very light blue/off-white background */
-            margin: 0; /* Remove default body margin */
+            background-color: #f8fbfd;
+            margin: 0;
         }
 
         .topnav {
             overflow: hidden;
-            background-color: #2c3e50; /* Deep professional blue for nav bar */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+            background-color: #2c3e50;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         .topnav a {
             float: left;
             display: block;
-            color: white; /* White text for navigation links */
+            color: white;
             text-align: center;
-            padding: 15px 18px; /* Slightly adjusted padding */
+            padding: 15px 18px;
             text-decoration: none;
-            transition: background-color 0.3s ease; /* Smooth hover transition */
+            transition: background-color 0.3s ease;
         }
 
         .topnav a:hover {
-            background-color: #ecf0f1; /* Light grey on hover */
-            color: #2c3e50; /* Dark blue text on hover */
+            background-color: #ecf0f1;
+            color: #2c3e50;
         }
 
         .topnav a.active {
-            background-color: #3498db; /* A vibrant blue for the active link */
+            background-color: #3498db;
             color: white;
         }
 
         .content-area {
-            background-color: #ffffff; /* White background for the content area */
-            margin: 20px; /* Margin around the content box */
-            padding: 30px; /* Generous padding inside the content box */
-            border-radius: 8px; /* Slightly rounded corners for the content box */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Softer shadow for the content box */
-            color: #34495e; /* Dark grey text for content */
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            color: #34495e;
         }
 
         .content-area h2 {
-            color: #2c3e50; /* Deep blue heading */
-            margin-top: 0; /* Remove default h2 top margin */
-            margin-bottom: 15px; /* Add some space below the heading */
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
         }
 
         .content-area p {
-            line-height: 1.6; /* Improve readability for paragraphs */
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
 
     <div class="topnav">
-        <a href="{{ url_for('home') }}">Home</a>
-        <a class="active" href="#about">About</a>
-        <a href="{{ url_for('findyourcrop') }}">FindYourCrop</a>
+        <a href="home.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="findyourcrop.html">FindYourCrop</a>
     </div>
 
     <div class="content-area">
