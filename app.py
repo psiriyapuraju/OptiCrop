@@ -11,7 +11,7 @@ import pickle
 
 app = Flask(__name__)
 
-path = "C:\\Users\\psiri\\Desktop\\OptiCrop\\"
+path = r"C:\\Users\\psiri\\Desktop\\OptiCrop\\"
 model = pickle.load(open(path + "model.pkl", 'rb'))
 
 @app.route('/')
